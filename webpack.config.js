@@ -24,7 +24,6 @@ module.exports = async (env, options) => {
     },
     output: {
       clean: true,
-      path: path.resolve(__dirname, "public"),
     },
     resolve: {
       extensions: [".html", ".js"],
