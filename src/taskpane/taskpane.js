@@ -146,8 +146,10 @@ let dialog = null;
 
 function openDialog() {
   // TODO1: Call the Office Common API that opens a dialog
+  const url =
+    process.env.NODE_ENV === "production" ? "https://office-add-in-demo.vercel.app" : "https://localhost:3000";
   Office.context.ui.displayDialogAsync(
-    "https://localhost:3000/popup.html",
+    `${url}/popup.html`,
     { height: 45, width: 55 },
 
     // TODO2: Add callback parameter.

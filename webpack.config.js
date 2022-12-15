@@ -3,6 +3,7 @@ const path = require("path");
 const devCerts = require("office-addin-dev-certs");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const env = process.env.NODE_ENV || "development";
 
 const urlDev = "https://localhost:3000/";
 const urlProd = "https://office-add-in-demo.vercel.app/";
